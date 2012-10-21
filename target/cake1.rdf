@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:opmo="http://openprovenance.org/model/opmo#"
+	xmlns:opmv="http://purl.org/net/opmv/ns#"
+	xmlns:ex="http://example.com/cake1/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://example.com/cake1/black">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#Account"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/p1">
+	<rdf:type rdf:resource="http://purl.org/net/opmv/ns#Process"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+	<opmo:label>http://process.org/bake</opmo:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/ag1">
+	<rdf:type rdf:resource="http://purl.org/net/opmv/ns#Agent"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+	<opmo:label>John</opmo:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/a1">
+	<rdf:type rdf:resource="http://purl.org/net/opmv/ns#Artifact"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+	<opmo:label>100g butter</opmo:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/a2">
+	<rdf:type rdf:resource="http://purl.org/net/opmv/ns#Artifact"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+	<opmo:label>2 eggs</opmo:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/a3">
+	<rdf:type rdf:resource="http://purl.org/net/opmv/ns#Artifact"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+	<opmo:label>100g sugar</opmo:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/a4">
+	<rdf:type rdf:resource="http://purl.org/net/opmv/ns#Artifact"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+	<opmo:label>100g flour</opmo:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/a5">
+	<rdf:type rdf:resource="http://purl.org/net/opmv/ns#Artifact"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+	<opmo:label>cake</opmo:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/r_0">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#Role"/>
+	<opmo:value>butter</opmo:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/u_1">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#Used"/>
+	<opmo:effect rdf:resource="http://example.com/cake1/p1"/>
+	<opmo:role rdf:resource="http://example.com/cake1/r_0"/>
+	<opmo:cause rdf:resource="http://example.com/cake1/a1"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/r_2">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#Role"/>
+	<opmo:value>egg</opmo:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/u_3">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#Used"/>
+	<opmo:effect rdf:resource="http://example.com/cake1/p1"/>
+	<opmo:role rdf:resource="http://example.com/cake1/r_2"/>
+	<opmo:cause rdf:resource="http://example.com/cake1/a2"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/r_4">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#Role"/>
+	<opmo:value>sugar</opmo:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/u_5">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#Used"/>
+	<opmo:effect rdf:resource="http://example.com/cake1/p1"/>
+	<opmo:role rdf:resource="http://example.com/cake1/r_4"/>
+	<opmo:cause rdf:resource="http://example.com/cake1/a3"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/r_6">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#Role"/>
+	<opmo:value>flour</opmo:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/u_7">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#Used"/>
+	<opmo:effect rdf:resource="http://example.com/cake1/p1"/>
+	<opmo:role rdf:resource="http://example.com/cake1/r_6"/>
+	<opmo:cause rdf:resource="http://example.com/cake1/a4"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/r_8">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#Role"/>
+	<opmo:value>cake</opmo:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/g_9">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#WasGeneratedBy"/>
+	<opmo:cause rdf:resource="http://example.com/cake1/p1"/>
+	<opmo:role rdf:resource="http://example.com/cake1/r_8"/>
+	<opmo:effect rdf:resource="http://example.com/cake1/a5"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/d_10">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#WasDerivedFrom"/>
+	<opmo:cause rdf:resource="http://example.com/cake1/a1"/>
+	<opmo:effect rdf:resource="http://example.com/cake1/a5"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/d_11">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#WasDerivedFrom"/>
+	<opmo:cause rdf:resource="http://example.com/cake1/a2"/>
+	<opmo:effect rdf:resource="http://example.com/cake1/a5"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/d_12">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#WasDerivedFrom"/>
+	<opmo:cause rdf:resource="http://example.com/cake1/a3"/>
+	<opmo:effect rdf:resource="http://example.com/cake1/a5"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/d_13">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#WasDerivedFrom"/>
+	<opmo:cause rdf:resource="http://example.com/cake1/a4"/>
+	<opmo:effect rdf:resource="http://example.com/cake1/a5"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/r_14">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#Role"/>
+	<opmo:value>baker</opmo:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/c_15">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#WasControlledBy"/>
+	<opmo:effect rdf:resource="http://example.com/cake1/p1"/>
+	<opmo:role rdf:resource="http://example.com/cake1/r_14"/>
+	<opmo:cause rdf:resource="http://example.com/cake1/ag1"/>
+	<opmo:account rdf:resource="http://example.com/cake1/black"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://example.com/cake1/gr_16">
+	<rdf:type rdf:resource="http://openprovenance.org/model/opmo#OPMGraph"/>
+	<opmo:hasAccount rdf:resource="http://example.com/cake1/black"/>
+	<opmo:hasProcess rdf:resource="http://example.com/cake1/p1"/>
+	<opmo:hasArtifact rdf:resource="http://example.com/cake1/a5"/>
+	<opmo:hasArtifact rdf:resource="http://example.com/cake1/a3"/>
+	<opmo:hasArtifact rdf:resource="http://example.com/cake1/a4"/>
+	<opmo:hasArtifact rdf:resource="http://example.com/cake1/a1"/>
+	<opmo:hasArtifact rdf:resource="http://example.com/cake1/a2"/>
+	<opmo:hasAgent rdf:resource="http://example.com/cake1/ag1"/>
+	<opmo:hasDependency rdf:resource="http://example.com/cake1/u_7"/>
+	<opmo:hasDependency rdf:resource="http://example.com/cake1/u_5"/>
+	<opmo:hasDependency rdf:resource="http://example.com/cake1/u_3"/>
+	<opmo:hasDependency rdf:resource="http://example.com/cake1/u_1"/>
+	<opmo:hasDependency rdf:resource="http://example.com/cake1/d_10"/>
+	<opmo:hasDependency rdf:resource="http://example.com/cake1/d_11"/>
+	<opmo:hasDependency rdf:resource="http://example.com/cake1/d_12"/>
+	<opmo:hasDependency rdf:resource="http://example.com/cake1/c_15"/>
+	<opmo:hasDependency rdf:resource="http://example.com/cake1/g_9"/>
+	<opmo:hasDependency rdf:resource="http://example.com/cake1/d_13"/>
+</rdf:Description>
+
+</rdf:RDF>

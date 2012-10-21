@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<opmGraph xmlns="http://openprovenance.org/model/opmx#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns4="http://example.com/">
+    <accounts>
+        <account id="pst12"/>
+    </accounts>
+    <processes>
+        <process id="upload1">
+            <account ref="pst12"/>
+            <label value="upload1"/>
+        </process>
+        <process id="replace1">
+            <account ref="pst12"/>
+            <label value="replace1"/>
+        </process>
+        <process id="submit1">
+            <account ref="pst12"/>
+            <label value="submit1"/>
+        </process>
+        <process id="review1">
+            <account ref="pst12"/>
+            <label value="review1"/>
+        </process>
+        <process id="review2">
+            <account ref="pst12"/>
+            <label value="review2"/>
+        </process>
+        <process id="revise1">
+            <account ref="pst12"/>
+            <label value="revise1"/>
+        </process>
+        <process id="grade1">
+            <account ref="pst12"/>
+            <label value="grade1"/>
+        </process>
+        <process id="append1">
+            <account ref="pst12"/>
+            <label value="append1"/>
+        </process>
+    </processes>
+    <artifacts>
+        <artifact id="o1v1">
+            <account ref="pst12"/>
+            <label value="o1v1"/>
+        </artifact>
+        <artifact id="o1v2">
+            <account ref="pst12"/>
+            <label value="o1v2"/>
+        </artifact>
+        <artifact id="o1v3">
+            <account ref="pst12"/>
+            <label value="o1v3"/>
+        </artifact>
+        <artifact id="o2v1">
+            <account ref="pst12"/>
+            <label value="o2v1"/>
+        </artifact>
+        <artifact id="o2v2">
+            <account ref="pst12"/>
+            <label value="o2v2"/>
+        </artifact>
+        <artifact id="o3v1">
+            <account ref="pst12"/>
+            <label value="o3v1"/>
+        </artifact>
+        <artifact id="o4v1">
+            <account ref="pst12"/>
+            <label value="o4v1"/>
+        </artifact>
+        <artifact id="o4v2">
+            <account ref="pst12"/>
+            <label value="o4v2"/>
+        </artifact>
+    </artifacts>
+    <agents>
+        <agent id="au1">
+            <account ref="pst12"/>
+            <label value="au1"/>
+        </agent>
+        <agent id="au2">
+            <account ref="pst12"/>
+            <label value="au2"/>
+        </agent>
+        <agent id="au3">
+            <account ref="pst12"/>
+            <label value="au3"/>
+        </agent>
+        <agent id="au4">
+            <account ref="pst12"/>
+            <label value="au4"/>
+        </agent>
+    </agents>
+    <dependencies>
+        <used>
+            <effect ref="replace1"/>
+            <role value="input"/>
+            <cause ref="o1v1"/>
+            <account ref="pst12"/>
+        </used>
+        <used>
+            <effect ref="submit1"/>
+            <role value="input"/>
+            <cause ref="o1v2"/>
+            <account ref="pst12"/>
+        </used>
+        <used>
+            <effect ref="review1"/>
+            <role value="input"/>
+            <cause ref="o1v3"/>
+            <account ref="pst12"/>
+        </used>
+        <used>
+            <effect ref="review2"/>
+            <role value="input"/>
+            <cause ref="o1v3"/>
+            <account ref="pst12"/>
+        </used>
+        <used>
+            <effect ref="revise1"/>
+            <role value="input"/>
+            <cause ref="o2v1"/>
+            <account ref="pst12"/>
+        </used>
+        <used>
+            <effect ref="grade1"/>
+            <role value="input"/>
+            <cause ref="o1v3"/>
+            <account ref="pst12"/>
+        </used>
+        <used>
+            <effect ref="append1"/>
+            <role value="ref"/>
+            <cause ref="o2v2"/>
+            <account ref="pst12"/>
+        </used>
+        <used>
+            <effect ref="append1"/>
+            <role value="src"/>
+            <cause ref="o4v1"/>
+            <account ref="pst12"/>
+        </used>
+        <wasGeneratedBy>
+            <effect ref="o1v1"/>
+            <role value="upload"/>
+            <cause ref="upload1"/>
+            <account ref="pst12"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy>
+            <effect ref="o1v2"/>
+            <role value="replace"/>
+            <cause ref="replace1"/>
+            <account ref="pst12"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy>
+            <effect ref="o1v3"/>
+            <role value="submit"/>
+            <cause ref="submit1"/>
+            <account ref="pst12"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy>
+            <effect ref="o2v1"/>
+            <role value="review"/>
+            <cause ref="review1"/>
+            <account ref="pst12"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy>
+            <effect ref="o3v1"/>
+            <role value="review"/>
+            <cause ref="review2"/>
+            <account ref="pst12"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy>
+            <effect ref="o2v2"/>
+            <role value="revise"/>
+            <cause ref="revise1"/>
+            <account ref="pst12"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy>
+            <effect ref="o4v1"/>
+            <role value="grade"/>
+            <cause ref="grade1"/>
+            <account ref="pst12"/>
+        </wasGeneratedBy>
+        <wasGeneratedBy>
+            <effect ref="o4v2"/>
+            <role value="append"/>
+            <cause ref="append1"/>
+            <account ref="pst12"/>
+        </wasGeneratedBy>
+        <wasControlledBy>
+            <effect ref="upload1"/>
+            <role value=""/>
+            <cause ref="au1"/>
+            <account ref="pst12"/>
+        </wasControlledBy>
+        <wasControlledBy>
+            <effect ref="replace1"/>
+            <role value=""/>
+            <cause ref="au1"/>
+            <account ref="pst12"/>
+        </wasControlledBy>
+        <wasControlledBy>
+            <effect ref="submit1"/>
+            <role value=""/>
+            <cause ref="au1"/>
+            <account ref="pst12"/>
+        </wasControlledBy>
+        <wasControlledBy>
+            <effect ref="review1"/>
+            <role value=""/>
+            <cause ref="au2"/>
+            <account ref="pst12"/>
+        </wasControlledBy>
+        <wasControlledBy>
+            <effect ref="revise1"/>
+            <role value=""/>
+            <cause ref="au2"/>
+            <account ref="pst12"/>
+        </wasControlledBy>
+        <wasControlledBy>
+            <effect ref="review2"/>
+            <role value=""/>
+            <cause ref="au3"/>
+            <account ref="pst12"/>
+        </wasControlledBy>
+        <wasControlledBy>
+            <effect ref="grade1"/>
+            <role value=""/>
+            <cause ref="au4"/>
+            <account ref="pst12"/>
+        </wasControlledBy>
+        <wasControlledBy>
+            <effect ref="append1"/>
+            <role value=""/>
+            <cause ref="au4"/>
+            <account ref="pst12"/>
+        </wasControlledBy>
+    </dependencies>
+</opmGraph>
